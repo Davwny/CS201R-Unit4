@@ -5,28 +5,49 @@
 #include "vectorFunctions.h"
 int main()
 {
-    /*
+ 
     cout << "REVIEW EXAMPLES\n";
     //REVIEW - INTEGER DIVISION & STATIC CASTING
     int a = 10, b = 3;
     float result = a / b;
-    cout << "result = " << result << endl;
+    cout << "result = " << result << endl << endl;
 
     //REVIEW STRING TO INTEGER
     string str1 = "1234";
     a = stoi(str1);
-    cout << "string is now an integer: " << a << endl;
+    a += 15; 
+    cout << "string is now an integer: " << a << endl << endl;
+
+    //VERIFYING STRINGS
+    char char1 = 'a', char2 = '7';
+        
+    cout << "digit? " << isdigit(char1) << " " << isdigit(char2) << endl;
+    cout << "alpha? " << isalpha(char1) << " " << isalpha(char2) << endl << endl;
+    cout << "why 4 ? ? ? no clue! " << endl;
+    for (int i = 0; i < 6; i++) {
+        char2 = char('0' + i);
+        cout << char2 << " " << isdigit(char2) << " :: ";
+    }
+    cout << endl << endl;
+
+    bool isDigit = str1.find_first_not_of("0123456789") == string::npos;
+    cout << str1 << " contains only digits? " << isDigit << endl;
+
+    string str2 = "123ABC";
+    isDigit = str2.find_first_not_of("0123456789") == string::npos;
+    cout << str2 << " contains only digits? " << isDigit << endl << endl;
+
 
     //REVIEW INTEGER TO ASCII CHAR
-    char char1;
+    char char3;
     cout << char(84) << char(104) << char(105) << char(115);
     cout << " is printing some stuff\n";
     for (int i = 0; i < 6; i++) {
-        char1 = char('A' + i);
-        cout << char1 << " ";
+        char3 = char('A' + i);
+        cout << char3 << " ";
     }
-    cout << endl;
-
+    cout << endl << endl;
+    /*
     //BINARY STRING TO DECIMAL VALUE
     str1 = "1110";  //binary string
     int dec = 0, pow = 1;
@@ -48,16 +69,16 @@ int main()
         decValue /= newBase;
     }
     cout << "Decimal Value " << holdValue << " = " << str1 << " in binary\n";
-
-    cout << endl << endl << endl;
-    arrayExample1();
-    arrayExample2();
-    arrayExample3();
-    //arrayExample4();
-    //arrayExample5();
     */
     cout << endl << endl << endl;
+    //arrayExample1();
+    //arrayExample2();
+    //arrayExample3();
+    //arrayExample4();
+    //arrayExample5();
+
+    cout << endl << endl << endl;
     //vectorExample1();  //find smallest;add values;print
-    vectorExample2();  //2-D vector (matrix)
+    //vectorExample2();  //2-D vector (matrix)
 }
  
