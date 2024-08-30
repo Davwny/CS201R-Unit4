@@ -28,18 +28,18 @@ void vectorExample1() {
 void readVector(string str1, vector<vector<int>> &v1){
 
     int row, col, tempValue;
-    vector<int> currRow;
-    stringstream ss(str1);
-    v1.clear();
+    vector<int> currRow;       //this vector represents a row in the 2-D vector
+    stringstream ss(str1);     //take the input line & create a string stream
+    v1.clear();                //clear vector passed in of previous values
     
     //first 2 values are row & col
     ss >> row >> col;
     //read each row
     for (int i = 0; i < row; ++i) {
         //for each row - clear currRow
-        //read 'col' numbers into the currRow
         currRow.clear();
 
+        //read numbers into the currRow
         for (int j = 0; j < col; ++j) {
             ss >> tempValue;
             currRow.push_back(tempValue);
