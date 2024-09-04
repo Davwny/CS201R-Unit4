@@ -62,7 +62,7 @@ void arrayExample3() {
     getArray(age, ARRSIZE3);
     printArray(age, ARRSIZE3);
     double avg = average(age, ARRSIZE3);
-    cout << "  The average is: " << avg << endl;
+    cout << "  The average is: "<< fixed << setprecision(2) << avg << endl;
 }
 
 void arrayExample4() {
